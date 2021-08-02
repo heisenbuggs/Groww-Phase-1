@@ -85,3 +85,9 @@ body {
   align-items: center;
   margin-left: 250px;
 }
+
+#textend1, #textend2, #textend3 {
+  color: red;
+  align-items: center;
+  margin-left: 200px;
+}

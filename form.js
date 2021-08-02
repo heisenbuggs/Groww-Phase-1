@@ -19,34 +19,38 @@ const validateForm = () => {
     let spouse = document.forms["form"]["spouse"].value;
     let details = document.forms["form"]["details"].value;
     let tnc = document.forms["form"]["tnc"].value;
+    let go = 0;
 
     for(let i=0; i<firstname.length; i++) {
         if(firstname[i]===" ") {
-            document.getElementById("textend").innerHTML = "First Name contains white space!!";
+            document.getElementById("textend1").innerHTML = "First Name contains white space!!";
+            go = 1;
             break;
         }
     }
 
     for(let i=0; i<lastname.length; i++) {
         if(lastname[i]===" ") {
-            document.getElementById("textend").innerHTML = "Last Name contains white space!!";
+            document.getElementById("textend2").innerHTML = "Last Name contains white space!!";
+            go = 1;
             break;
         }
     }
 
     for(let i=0; i<spouse.length; i++) {
         if(spouse[i]===" ") {
-            document.getElementById("textend").innerHTML = "Spouse Name contains white space!!";
+            document.getElementById("textend3").innerHTML = "Spouse Name contains white space!!";
+            go = 1;
             break;
         }
     }
     
-
-    if(firstname==="") {
+    if(go===1) return false;
+    if(firstname==="" || firstname===" ") {
         alert("Please enter First Name");
         document.getElementById("fname").focus();
     }
-    else if(lastname==="") {
+    else if(lastname==="" || lastname===" ") {
         alert("Please enter Last Name");
         document.getElementById("lname").focus();
     }
@@ -58,11 +62,11 @@ const validateForm = () => {
         alert("Please enter Marital Status");
         document.getElementById("status").focus();
     }
-    else if(spouse==="" && status==="single") {
+    else if(spouse==="" && status==="single" || spouse===" ") {
         alert("Please enter Spouse Name");
         document.getElementById("spouse").focus();
     }
-    else if(details==="") {
+    else if(details==="" || details===" ") {
         alert("Please enter Other Details");
         document.getElementById("details").focus();
     }
