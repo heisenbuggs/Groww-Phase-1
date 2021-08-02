@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+  <title>Employee Input Form</title>
+  <link rel="stylesheet" type="text/css" href="form.css" />
+</head>
+<body>
+  <h2 class="heading">Employee Input Form</h2>
+  <div class="container">
+    <form id="form">
+      <div class="row">
+        <h4>First Name</h4>
+        <input
+          type="text"
+          aria-label="firstname"
+          class="firstname"
+          autofocus
+          name="fname"
+          id="fname"
+        />
+      </div>
+      <div class="row">
+        <h4>Last Name</h4>
+        <input
+          type="text"
+          aria-label="lastname"
+          class="lastname"
+          name="lname"
+          id="lname"
+        />
+      </div>
+      <div class="row">
+        <h4>Gender</h4>
+        <input
+          type="radio"
+          name="gender"
+          id="male"
+          value="Male"
+          aria-label="Male"
+          class="bullet"
+        />
+        <label for="male" class="gender">Male</label>
+        <input
+          type="radio"
+          name="gender"
+          id="female"
+          value="Female"
+          aria-label="Female"
+          class="bullet"
+        />
+        <label for="female" class="gender">Female</label>
+      </div>
+      <div class="row">
+        <h4>Marital Status</h4>
+        <input
+          type="radio"
+          name="status"
+          id="single"
+          value="Single"
+          aria-label="Single"
+          class="bulletstatus"
+          onclick="EnableDisableTextBox()"
+        />
+        <label for="male" class="gender">Single</label>
+        <input
+          type="radio"
+          name="status"
+          id="married"
+          value="Married"
+          aria-label="Married"
+          class="bullet"
+          onclick="EnableDisableTextBox()"
+        />
+        <label for="female" class="gender">Married</label>
+      </div>
+      <div class="row">
+        <h4>Name of Spouse</h4>
+        <input
+          type="text"
+          aria-label="spousename"
+          class="inputboxSpouse"
+          id="namespouse"
+          name="spouse"
+        />
+      </div>
+      <div class="row">
+        <h4>Other Details</h4>
+        <input
+          type="multitext"
+          aria-label="details"
+          class="detailsbox"
+          name="details"
+        />
+      </div>
+      <div class="rowtnc">
+        <input
+          type="checkbox"
+          id="tnc"
+          name="tnc"
+          value="tnc"
+          class="tnc"
+          aria-label="tnc"
+        />
+        <label for="tnc" class="tnc"
+          >I accept <a href="#">Terms and Conditions</a></label
+        >
+      </div>
+      <div class="rowbutton">
+        <button class="button" onclick="reset()">Reset</button>
+        <button class="button" onclick="return validateForm()">Submit</button>
+      </div>
+      <h3 id="textend" class="greenfont"></h3>
+    </form>
+  </div>
+  <script src="form.js"></script>
+</body>

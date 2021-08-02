@@ -1,0 +1,87 @@
+body {
+ background-color: #f3f3f3;
+}
+.heading {
+  text-align: center;
+}
+
+.container {
+  margin: 30px 25%;
+  border: 1px solid #CCC;
+  padding: 20px;
+  box-shadow: 5px 10px 18px #888888;
+  background-color: whitesmoke;
+}
+
+.row {
+  display: flex;
+  margin-top: 20px;
+}
+
+.firstname {
+  width: 500px;
+  margin-left: 80px;
+  border-color: blue;
+}
+
+.lastname {
+  width: 500px;
+  margin-left: 83px;
+  border-color: blue;
+}
+
+.inputboxSpouse {
+  margin-left: 47px;
+  width: 500px;
+  border-color: blue;
+}
+
+.detailsbox {
+  margin-left: 64px;
+  width: 500px;
+  border-color: blue;
+}
+
+.bullet {
+  margin-left: 120px;
+  margin-top: 27px;
+}
+
+.bulletstatus {
+  margin-top: 27px;
+  margin-left: 73px;
+}
+
+.gender {
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.button {
+  margin-left: 10px;
+  padding: 10px;
+  width: 150px;
+  border-color: aquamarine;
+  background-color: aquamarine;
+}
+
+.rowtnc {
+  margin-left: 200px;
+}
+
+.rowbutton {
+  display: flex;
+  margin-left: 180px;
+  margin-top: 20px;
+}
+
+.tnc {
+  margin-top: 20px;
+  align-items: center;
+}
+
+#textend {
+  color: green;
+  align-items: center;
+  margin-left: 250px;
+}
