@@ -8,7 +8,7 @@
   <div class="container">
     <form id="form">
       <div class="row">
-        <h4>First Name</h4>
+        <h4>First Name <span class="star">*</span></h4>
         <input
           type="text"
           aria-label="firstname"
@@ -20,7 +20,7 @@
       </div>
       <h3 id="textend1" class="greenfont"></h3>
       <div class="row">
-        <h4>Last Name</h4>
+        <h4>Last Name <span class="star">*</span></h4>
         <input
           type="text"
           aria-label="lastname"
@@ -31,7 +31,7 @@
       </div>
       <h3 id="textend2" class="greenfont"></h3>
       <div class="row">
-        <h4>Gender</h4>
+        <h4>Gender <span class="star">*</span></h4>
         <input
           type="radio"
           name="gender"
@@ -52,7 +52,7 @@
         <label for="female" class="gender">Female</label>
       </div>
       <div class="row">
-        <h4>Marital Status</h4>
+        <h4>Marital Status <span class="star">*</span></h4>
         <input
           type="radio"
           name="status"
@@ -75,7 +75,7 @@
         <label for="female" class="gender">Married</label>
       </div>
       <div class="row">
-        <h4>Name of Spouse</h4>
+        <h4>Name of Spouse <span class="star">*</span></h4>
         <input
           type="text"
           aria-label="spousename"
@@ -86,7 +86,7 @@
       </div>
       <h3 id="textend3" class="greenfont"></h3>
       <div class="row">
-        <h4>Other Details</h4>
+        <h4>Other Details <span class="star">*</span></h4>
         <input
           type="multitext"
           aria-label="details"
@@ -100,7 +100,6 @@
           id="tnc"
           name="tnc"
           value="tnc"
-          class="tnc"
           aria-label="tnc"
         />
         <label for="tnc" class="tnc"
@@ -108,7 +107,7 @@
         >
       </div>
       <div class="rowbutton">
-        <button class="button" onclick="reset()">Reset</button>
+        <button class="buttonreset" onclick="reset()">Reset</button>
         <button class="button" onclick="return validateForm()">Submit</button>
       </div>
       <h3 id="textend" class="greenfont"></h3>
