@@ -21,25 +21,38 @@ body {
 .firstname {
   width: 500px;
   margin-left: 80px;
-  border-color: blue;
+  margin-top: 10px;
+  border-color: black;
+  height: 40px;
 }
 
 .lastname {
   width: 500px;
+  margin-top: 10px;
   margin-left: 83px;
-  border-color: blue;
+  height: 40px;
+  border-color: black;
 }
 
 .inputboxSpouse {
   margin-left: 47px;
   width: 500px;
-  border-color: blue;
+  margin-top: 10px;
+  height: 40px;
+  border-color: black;
 }
 
 .detailsbox {
   margin-left: 64px;
+  margin-top: 10px;
   width: 500px;
-  border-color: blue;
+  height: 40px;
+  border-color: black;
+}
+
+.firstname:focus, .lastname:focus, .inputboxSpouse:focus, .detailsbox:focus,
+.firstname:active , .lastname:active, .detailsbox:active, .inputboxSpouse:active {
+  border-color: aquamarine !important;
 }
 
 .bullet {
@@ -78,6 +91,7 @@ body {
 .tnc {
   margin-top: 20px;
   align-items: center;
+  padding: 2px;
 }
 
 #textend {
@@ -89,5 +103,6 @@ body {
 #textend1, #textend2, #textend3 {
   color: red;
   align-items: center;
-  margin-left: 200px;
+  margin-left: 160px;
+  font-size: 10px;
 }
